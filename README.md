@@ -2,7 +2,7 @@
 
 Atlas d'anatomie humaine en 3D, dans le navigateur, pour réviser : 3 895 structures et 1 120 repères osseux nommés en français, latin et anglais.
 
-**Ouvrir l'atlas : https://bicolourdart968.github.io/atlas-anatomie-3d/**
+**Ouvrir l'atlas : https://bicolourdart968.github.io/Atlas-anatomie-3d/**
 
 ## Ce qu'il fait
 
