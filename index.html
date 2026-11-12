@@ -164,7 +164,7 @@ button { cursor: pointer; }
 #examRes .row.ok .verdict { border-color: var(--ok); color: var(--ok); }
 .endBtns { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 4px; }
 #pins { position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; }
-.pin { position: absolute; transform: translate(-50%, -50%); width: 24px; height: 24px; border-radius: 50%; padding: 0;
+.pin { position: absolute; left: 0; top: 0; will-change: transform; transform: translate(-50%, -50%); width: 24px; height: 24px; border-radius: 50%; padding: 0;
   background: var(--bone); color: var(--ink); border: 2px solid var(--ink); font: 600 12px/1 var(--body);
   font-variant-numeric: tabular-nums; pointer-events: auto; box-shadow: 0 2px 6px rgba(0,0,0,.5); }
 .pin.filled { background: #b9c4cf; }
@@ -174,7 +174,7 @@ button { cursor: pointer; }
 #toast { position: absolute; left: 50%; top: 112px; transform: translateX(-50%); background: var(--bone); color: var(--ink);
   padding: 8px 14px; border-radius: 999px; font-weight: 500; z-index: 9; max-width: calc(100% - 32px); text-align: center;
   pointer-events: none; }
-#mark { position: absolute; z-index: 3; transform: translate(10px, -50%); background: var(--accent); color: #fff;
+#mark { position: absolute; left: 0; top: 0; will-change: transform; z-index: 3; transform: translate(10px, -50%); background: var(--accent); color: #fff;
   padding: 2px 8px; border-radius: 6px; font-size: 13px; pointer-events: none; white-space: nowrap; }
 #fatal { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; text-align: center; z-index: 20;
   background: var(--ink); }
