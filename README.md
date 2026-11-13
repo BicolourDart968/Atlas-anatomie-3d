@@ -9,8 +9,9 @@ Atlas d'anatomie humaine en 3D, dans le navigateur, pour réviser : 3 895 struct
 - Couches à activer séparément : squelette, articulations, muscles, insertions, artères, veines, cœur, nerfs, viscères, lymphatique, fascias, régions.
 - Toucher une structure donne son nom, sa place dans la hiérarchie, ses repères, puis permet de la masquer, l'isoler ou estomper le reste.
 - Recherche par nom dans les trois langues.
-- Mode dissection, quiz « Localiser » et « Nommer ».
-- Examen de dissection : dix épingles numérotées dans une région (cou, thorax, fosse axillaire, bras, avant-bras, main, région glutéale, triangle fémoral, cuisse, jambe, pied), en plan superficiel ou profond.
+- Mode dissection, quiz « Localiser », « Nommer » et « Fiches musculaires » (origine, terminaison, action, innervation), par chapitre du cours de bac 1 ou sur les couches affichées.
+- Examen de dissection : épingles numérotées dans les régions des TP (abords postérieur et antérieur des membres pelvien et thoracique), placées sur les structures du dossier de TP, en plan superficiel ou profond.
+- Vocabulaire du cours reconnu (« nerf honteux », « malléole tibiale », « EIAS »…). `COUVERTURE.md` liste ce que le cours contient et ce qui manque en 3D.
 - Deux qualités : « Fluide » (modèles allégés, par défaut sur téléphone) et « Détaillée ».
 
 ## Lancer en local
