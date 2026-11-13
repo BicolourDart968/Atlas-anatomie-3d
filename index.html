@@ -135,6 +135,10 @@ button { cursor: pointer; }
 #quizPrompt small { display: block; font: 400 13px var(--body); color: var(--muted); }
 #quizChoices { display: grid; gap: 6px; }
 #quizChoices .btn { text-align: left; white-space: normal; }
+#quizChoices dl { margin: 4px 0 0; font-size: 13.5px; display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; }
+#quizChoices dt { color: var(--muted); }
+#quizChoices dd { margin: 0; }
+#quiz { max-height: 70%; overflow: auto; }
 #quizChoices .btn.ok, #quiz.ok { border-color: var(--ok); }
 #quizChoices .btn.ok { background: color-mix(in srgb, var(--ok) 25%, var(--panel)); }
 #quizChoices .btn.bad { background: color-mix(in srgb, var(--bad) 25%, var(--panel)); border-color: var(--bad); }
@@ -220,11 +224,13 @@ button { cursor: pointer; }
 
 <div id="quizMenu" hidden>
   <h2>Quiz</h2>
-  <p>Les questions portent sur les couches affichées à l'écran.</p>
+  <p>Choisissez un chapitre du cours : les couches utiles s'affichent et les questions ne portent que sur ses structures.</p>
+  <div class="form"><label for="qTheme">Chapitre</label><select id="qTheme"><option value="">Couches affichées à l'écran</option></select></div>
   <button class="opt" data-mode="find"><b>Localiser</b><span>Un nom est donné, touchez la structure sur le modèle.</span></button>
   <button class="opt" data-mode="name"><b>Nommer</b><span>Une structure est mise en évidence, choisissez son nom.</span></button>
+  <button class="opt" data-mode="fiche"><b>Fiches musculaires</b><span>Origine, terminaison, action et innervation des muscles du TP.</span></button>
   <h2 class="sep">Examen de dissection</h2>
-  <p>Dix épingles numérotées sont plantées dans une région disséquée. Écrivez le nom de chaque structure, la correction vient à la fin.</p>
+  <p>Épingles numérotées dans une région du TP, sur les structures que le dossier de TP demande. Écrivez le nom de chaque structure, la correction vient à la fin.</p>
   <div class="form">
     <label for="exRegion">Région</label><select id="exRegion"></select>
     <label for="exView">Vue</label><select id="exView"></select>
